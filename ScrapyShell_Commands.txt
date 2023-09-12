@@ -1,0 +1,12 @@
+Scrapy-crawl commands:
+
+scrapy shell "URL"
+response.css('title').extract() - This will give the title string along with the tag
+response.css('title::text').extract() - Returns only the title
+response.css('span.text'::text').extract() - This will return all the data present inside span tag as a list
+response.css('span.text'::text')[0].extract() - This will return the content present in the 0th index of the above list
+
+
+Navigate inside the scrapy project:
+1. To create a scrapy project : scrapy startproject projectName
+2. Then to run the scrapy framework: scrapy crawl bot-name  
